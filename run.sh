@@ -1,0 +1,1 @@
+qemu -L "./pc-bios/" -boot c -hda build/osl-microkernel.img

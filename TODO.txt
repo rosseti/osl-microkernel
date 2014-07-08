@@ -1,0 +1,16 @@
+Controlando Interrupções em Modo Protegido:
+* Interrupção causa uma transferência de controle para uma rotina de interrupção de serviço 
+	(interrupt service routine) ISR
+* ISR é chamado também de handler
+* Quando uma ISR está completa, o programa original resume sua execucao
+* Interrupcao provê um caminho mais eficiente para controlar eventos antecipados
+* Interrupts -> Exceptions -> Aborts, Faults, Traps
+
+Interrupt Descriptor Table (IDT)
+* Esta tabela contém endereço de todos os ISR's
+* Uma IDT tem o tamanho máximo de 256 descritores.
+* Cada descritor possui uma entry com 8 bytes long.
+	* Numero da interrupcao é multiplicado por 8 bytes para pegar o offset na IDT;
+* IDT pode ser guardada em qualquer lugar da memoria.
+
+http://www.scribd.com/doc/9232920/Interrupt-Handling-in-Protected-Mode
